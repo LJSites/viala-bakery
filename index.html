@@ -1,107 +1,246 @@
-<!doctype html>
-<!-- bakery · patisserie-elegant · hero-layout 1 · svc-layout 0 · generated from live Google Places data for Viala Bakery -->
-<html lang="en"><head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Viala Bakery — Bakery, Inglewood</title>
-<meta name="description" content="Viala Bakery — Bakery in Inglewood.">
-<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Marcellus&family=Karla:wght@400;500;600&display=swap" rel="stylesheet">
+<!DOCTYPE html>
+<!-- bakery · modern-artisan · hero-layout 6 · svc-layout 6 -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Viala Bakery — Inglewood Artisan Loaves</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;700;800&family=Inter:wght@300;400;500;700&display=swap" rel="stylesheet">
 <style>
-:root{--bg:#f5f1e8;--surface:#fff;--ink:#2a2721;--mut:#7b7468;--acc:#7a9a55;--line:#e0d8c8}
+:root{
+  --bg:#1a1614;
+  --bg2:#26201d;
+  --cream:#f3ead8;
+  --pink:#e8c4c0;
+  --acc:#c89060;
+  --ink:#1a1614;
+  --mute:#8a7e72;
+  --line:#36302c;
+}
 *{box-sizing:border-box;margin:0;padding:0}
-body{font-family:'Karla',Georgia,serif;background:var(--bg);color:var(--ink);line-height:1.62;-webkit-font-smoothing:antialiased}
-.disp{font-family:'Marcellus',serif}
-a{color:var(--acc);text-decoration:none}a:hover{text-decoration:underline}
-img{max-width:100%;display:block}
-.wrap{max-width:1120px;margin:0 auto;padding:0 26px}
-header{padding:16px 0;border-bottom:1px solid var(--line);position:sticky;top:0;background:var(--bg);z-index:30}
-header .row{display:flex;align-items:center;justify-content:space-between;gap:16px}
-.brand{font-family:'Marcellus',serif;font-weight:700;font-size:21px;letter-spacing:-.01em;color:var(--ink)}
-nav a{margin-left:20px;color:var(--mut);font-size:13.5px;font-weight:500}nav a:hover{color:var(--acc);text-decoration:none}
-.callbtn{display:inline-flex;align-items:center;gap:7px;background:var(--acc);color:#fff;padding:9px 16px;border-radius:8px;font-weight:600;font-size:13.5px;margin-left:20px}
-.callbtn:hover{filter:brightness(.92);text-decoration:none;color:#fff}
-.hero{padding:72px 0 60px}
-.hero .grid{display:grid;grid-template-columns:1.05fr .95fr;gap:46px;align-items:center}
-.kicker{display:inline-block;font-size:12.5px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--acc);margin-bottom:18px}
-h1{font-family:'Marcellus',serif;font-weight:700;font-size:clamp(40px,6.2vw,72px);line-height:1.02;letter-spacing:-.025em;margin-bottom:20px}
-.lede{font-size:18px;color:var(--mut);max-width:480px;margin-bottom:28px}
-.cta{display:flex;gap:12px;flex-wrap:wrap}
-.btn{display:inline-flex;align-items:center;gap:8px;padding:13px 24px;border-radius:8px;font-weight:600;font-size:14px;border:1.5px solid var(--ink);color:var(--ink);background:transparent}
-.btn:hover{background:var(--ink);color:var(--bg);text-decoration:none}
-.btn.solid{background:var(--acc);border-color:var(--acc);color:#fff}
-.btn.solid:hover{filter:brightness(.92);color:#fff}
-.hero-img{width:100%;aspect-ratio:4/5;object-fit:cover;border-radius:16px;order:-1;}
-.section{padding:62px 0;border-top:1px solid var(--line)}
-.kick{font-size:12.5px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--acc);margin-bottom:8px}
-h2{font-family:'Marcellus',serif;font-weight:700;font-size:34px;letter-spacing:-.02em;margin-bottom:8px}
+html,body{background:var(--bg);color:var(--cream);font-family:'Inter',sans-serif;font-weight:300;line-height:1.6;-webkit-font-smoothing:antialiased}
+.sy{font-family:'Syne',sans-serif;font-weight:800;letter-spacing:-1px}
+a{color:inherit}
+.wrap{max-width:1240px;margin:0 auto;padding:0 32px}
 
-.svcs{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:30px}
-.svcs .svc{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:22px}
-.svc-rows{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:30px}
-.svc-rows .svc-row{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:24px 26px;display:flex;align-items:baseline;gap:14px}
-.svc-list{margin-top:30px;border-top:1px solid var(--line)}
-.svc-list .svc-line{display:flex;align-items:baseline;gap:18px;padding:22px 0;border-bottom:1px solid var(--line)}
-.snum{font-family:'Marcellus',serif;font-size:13px;color:var(--acc);font-weight:600;letter-spacing:.08em}
-.svcs .svc h3,.svc-rows .svc-row h3,.svc-list .svc-line h3{font-family:'Marcellus',serif;font-weight:600;font-size:19px;margin-top:10px;letter-spacing:-.01em}
+/* nav */
+nav{padding:24px 0;border-bottom:1px solid var(--line);position:sticky;top:0;z-index:50;background:rgba(26,22,20,.85);backdrop-filter:blur(12px)}
+nav .row{display:flex;align-items:center;justify-content:space-between}
+.brand{font-family:'Syne',sans-serif;font-weight:800;font-size:24px;letter-spacing:-.5px;color:var(--cream)}
+.brand b{color:var(--acc)}
+.nlinks{display:flex;gap:34px;font-size:13px;font-weight:500;letter-spacing:1.5px;text-transform:uppercase}
+.nlinks a{color:var(--mute);text-decoration:none}
+.nlinks a:hover{color:var(--cream)}
+.cta{font-size:13px;font-weight:600;letter-spacing:1px;text-decoration:none;color:var(--ink);background:var(--cream);padding:11px 22px;border-radius:999px}
 
-.gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:28px}
-.gallery img{width:100%;aspect-ratio:1;object-fit:cover;border-radius:12px;border:1px solid var(--line)}
-.quotes{display:grid;grid-template-columns:repeat(2,1fr);gap:16px;margin-top:28px}
-.q{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:24px}
-.q p{font-family:'Marcellus',serif;font-size:18px;line-height:1.5;margin-bottom:12px}
-.q .who{font-size:13px;font-weight:600;color:var(--acc)}
-.visit{display:grid;grid-template-columns:1fr 1fr;gap:0;border:1px solid var(--line);border-radius:16px;overflow:hidden;margin-top:28px}
-.visit .info{padding:30px 32px;background:var(--surface)}
-.hrow{display:grid;grid-template-columns:120px 1fr;gap:12px;padding:9px 0;border-bottom:1px solid var(--line);font-size:14.5px}
-.hrow:last-child{border-bottom:0}.hd{font-weight:600}.ht{color:var(--mut)}
-.visit iframe{width:100%;height:100%;min-height:360px;border:0}
-.contact-line{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:18px}
-footer{background:var(--ink);color:var(--bg);padding:32px 0 46px;border-top:1px solid var(--line)}
-footer .fbrand{font-family:'Marcellus',serif;font-weight:700;font-size:18px}
-footer .credit{margin-top:10px;font-size:13px;opacity:.82}footer a{color:var(--acc)}
-@media(max-width:800px){.hero .grid{grid-template-columns:1fr}.hero-img{order:0;aspect-ratio:16/10}.svcs{grid-template-columns:1fr 1fr}.svc-rows{grid-template-columns:1fr}.gallery{grid-template-columns:1fr 1fr}.quotes,.visit{grid-template-columns:1fr}nav{display:none}.visit iframe{min-height:280px}}
-</style></head><body>
-<header><div class="wrap row">
-  <div class="brand">Viala Bakery</div>
-  <div style="display:flex;align-items:center"><nav><a href="#services">Services</a><a href="#gallery">Gallery</a><a href="#visit">Visit</a></nav><a class="callbtn" href="tel:+12133528917">Call (213) 352-8917</a></div>
+/* hero — bold type with abstract dough shape */
+.hero{padding:120px 0;position:relative;overflow:hidden}
+.hero::before{
+  content:"";position:absolute;width:560px;height:560px;border-radius:42% 58% 38% 62% / 51% 45% 55% 49%;
+  background:linear-gradient(135deg,var(--acc),var(--pink));
+  top:-100px;right:-150px;filter:blur(2px);
+  animation:morph 14s ease-in-out infinite alternate;opacity:.5
+}
+.hero::after{
+  content:"";position:absolute;width:380px;height:380px;border-radius:55% 45% 52% 48% / 48% 52% 45% 55%;
+  background:radial-gradient(circle,var(--pink),transparent 75%);
+  bottom:-100px;left:-100px;opacity:.4
+}
+@keyframes morph{
+  0%{border-radius:42% 58% 38% 62% / 51% 45% 55% 49%}
+  100%{border-radius:55% 45% 60% 40% / 48% 60% 40% 52%}
+}
+.hero .inner{position:relative;max-width:980px}
+.pre{font-size:12px;letter-spacing:6px;color:var(--acc);text-transform:uppercase;font-weight:700;margin-bottom:30px}
+.pre::before{content:"◯ ";color:var(--pink)}
+.pre::after{content:" ◯";color:var(--pink)}
+.hero h1{font-family:'Syne',sans-serif;font-weight:800;font-size:clamp(64px,12vw,180px);line-height:.88;letter-spacing:-4px;color:var(--cream)}
+.hero h1 em{font-style:italic;color:var(--acc);font-weight:400}
+.hero h1 .pk{color:var(--pink)}
+.hero .lede{margin-top:36px;font-size:20px;max-width:580px;color:#c4b9aa;line-height:1.65;font-weight:300}
+.hero .actions{display:flex;gap:14px;margin-top:44px;align-items:center;flex-wrap:wrap}
+.btn{padding:16px 30px;border-radius:999px;text-decoration:none;font-weight:600;font-size:13px;letter-spacing:1.5px;text-transform:uppercase}
+.btn.primary{background:var(--cream);color:var(--ink)}
+.btn.ghost{border:1px solid var(--cream);color:var(--cream)}
+
+/* marquee */
+.marquee{padding:30px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line);overflow:hidden;white-space:nowrap;font-family:'Syne',sans-serif;font-weight:800;font-size:28px;letter-spacing:-.5px;color:var(--cream)}
+.marquee span{margin:0 30px}
+.marquee .dot{color:var(--acc);font-weight:400}
+
+/* manifesto */
+.man{padding:140px 0}
+.man .grid{display:grid;grid-template-columns:1fr 1.4fr;gap:80px;align-items:start}
+.man h2{font-family:'Syne',sans-serif;font-weight:800;font-size:54px;line-height:1;letter-spacing:-1.5px;color:var(--cream)}
+.man h2 em{font-style:italic;color:var(--acc);font-weight:400}
+.man .pre{margin-bottom:20px}
+.man p{font-size:18px;color:#bdb1a2;line-height:1.7;font-weight:300}
+.man p + p{margin-top:16px}
+.man p em{color:var(--pink);font-style:normal;font-weight:500}
+
+/* the loaves — strong type grid */
+.loaves{padding:140px 0;background:var(--bg2);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.loaves .head{margin-bottom:80px}
+.loaves h2{font-family:'Syne',sans-serif;font-weight:800;font-size:72px;letter-spacing:-2px;color:var(--cream)}
+.loaves h2 em{font-style:italic;color:var(--acc);font-weight:400}
+.loavesgrid{display:grid;grid-template-columns:repeat(2,1fr);gap:1px;background:var(--line)}
+.loaf{background:var(--bg2);padding:50px 40px;position:relative}
+.loaf .num{font-family:'Syne',sans-serif;font-weight:800;font-size:14px;color:var(--acc);letter-spacing:3px}
+.loaf h3{font-family:'Syne',sans-serif;font-weight:800;font-size:42px;color:var(--cream);margin-top:14px;letter-spacing:-1px;line-height:1}
+.loaf h3 em{font-style:italic;color:var(--pink);font-weight:400}
+.loaf p{margin-top:18px;font-size:15px;color:#998b7c;line-height:1.7;max-width:380px}
+.loaf .price{position:absolute;top:50px;right:40px;font-family:'Syne',sans-serif;font-weight:800;font-size:24px;color:var(--acc)}
+
+/* praise — single hero quote */
+.praise{padding:140px 0;text-align:center}
+.praise .star{color:var(--acc);font-size:18px;letter-spacing:6px}
+.praise blockquote{margin-top:30px;font-family:'Syne',sans-serif;font-weight:800;font-style:italic;font-size:clamp(40px,5vw,72px);line-height:1.05;letter-spacing:-1.5px;color:var(--cream);max-width:1000px;margin-left:auto;margin-right:auto}
+.praise blockquote em{color:var(--acc);font-style:italic}
+.praise .who{margin-top:38px;font-size:13px;letter-spacing:3px;color:var(--mute);text-transform:uppercase;font-weight:600}
+.praise .who b{color:var(--cream)}
+
+/* visit */
+.visit{padding:140px 0;background:var(--cream);color:var(--ink);position:relative;overflow:hidden}
+.visit::before{
+  content:"";position:absolute;width:500px;height:500px;border-radius:50%;background:var(--pink);opacity:.5;top:-150px;right:-150px;filter:blur(40px)
+}
+.visit .grid{position:relative;display:grid;grid-template-columns:1.1fr 1fr;gap:80px;align-items:center}
+.visit .pre{color:var(--acc)}
+.visit h2{font-family:'Syne',sans-serif;font-weight:800;font-size:72px;letter-spacing:-2px;color:var(--ink);margin-top:14px;line-height:.95}
+.visit h2 em{font-style:italic;color:var(--acc);font-weight:400}
+.visit .lede{margin-top:24px;font-size:19px;color:#4a4338;max-width:480px;line-height:1.6}
+.visit .info{margin-top:36px;display:grid;gap:20px}
+.visit .row{padding:20px 24px;background:#fff;border-radius:18px;display:grid;grid-template-columns:140px 1fr;gap:14px;align-items:center}
+.visit .row b{font-size:11px;letter-spacing:3px;color:var(--acc);text-transform:uppercase;font-weight:700}
+.visit .row a{color:var(--ink);text-decoration:none;font-weight:700;font-family:'Syne',sans-serif}
+.visit .row span{color:var(--ink);font-weight:500;font-family:'Syne',sans-serif}
+.hourcard{background:var(--ink);color:var(--cream);padding:50px;border-radius:24px}
+.hourcard h3{font-family:'Syne',sans-serif;font-weight:800;font-size:32px;color:var(--acc);margin-bottom:24px}
+.hr{display:flex;justify-content:space-between;padding:14px 0;border-bottom:1px solid #36302c;font-size:15px}
+.hr:last-child{border-bottom:none}
+.hr b{font-family:'Syne',sans-serif;font-weight:800;color:var(--cream)}
+.hr span{color:var(--acc);font-weight:500}
+
+/* footer */
+footer{padding:80px 0 50px;text-align:center;background:var(--ink);color:var(--cream)}
+footer .b{font-family:'Syne',sans-serif;font-weight:800;font-size:clamp(60px,9vw,120px);letter-spacing:-3px;color:var(--cream);line-height:1}
+footer .b em{font-style:italic;color:var(--acc);font-weight:400}
+footer .tag{font-size:12px;letter-spacing:4px;color:var(--mute);text-transform:uppercase;margin-top:16px;font-weight:600}
+footer .det{margin-top:24px;font-size:14px;color:#c4b9aa}
+footer .det a{color:var(--acc);text-decoration:none}
+footer .credit{margin-top:48px;padding-top:30px;border-top:1px solid var(--line);font-size:12px;color:var(--mute)}
+footer .credit a{color:var(--acc)}
+
+@media (max-width:880px){
+  .man .grid,.visit .grid{grid-template-columns:1fr;gap:40px}
+  .loavesgrid{grid-template-columns:1fr}
+  .nlinks{display:none}
+  .hero{padding:80px 0}
+  .praise blockquote{font-size:34px}
+}
+</style>
+</head>
+<body>
+
+<nav><div class="wrap row">
+  <div class="brand">Viala<b>.</b></div>
+  <div class="nlinks">
+    <a href="#manifesto">Process</a>
+    <a href="#loaves">Loaves</a>
+    <a href="#visit">Visit</a>
+  </div>
+  <a class="cta" href="tel:+12133528917">CALL · (213) 352-8917</a>
+</div></nav>
+
+<header class="hero"><div class="wrap">
+  <div class="inner">
+    <div class="pre">Inglewood · Artisan Bakery · Late-Hours</div>
+    <h1>Bread <em>made</em><br>the slow way.<br><span class="pk">Open late.</span></h1>
+    <p class="lede">Sourdough, brioche, baguettes, and small-batch pastries — baked daily in Inglewood, sold from morning until you forget what time it is.</p>
+    <div class="actions">
+      <a class="btn primary" href="tel:+12133528917">Reserve a Loaf</a>
+      <a class="btn ghost" href="#loaves">See What's Baking</a>
+    </div>
+  </div>
 </div></header>
 
-<section class="hero"><div class="wrap"><div class="grid">
-  <div>
-    <span class="kicker">Made fresh, made local</span>
-    <h1 class="disp">Out of the oven,<br>onto your plate.</h1>
-    <p class="lede">A neighborhood bakery that's earned its regulars the honest way — by being good at what it does. Here's everything you need to find us, reach us, and stop by.</p>
-    <div class="cta"><a class="btn solid" href="tel:+12133528917">Call (213) 352-8917</a><a class="btn" href="#visit">Hours &amp; location</a></div>
-  </div>
-  
-</div></div></section>
+<div class="marquee">
+  <span>Sourdough</span><span class="dot">◯</span>
+  <span>Brioche</span><span class="dot">◯</span>
+  <span>Baguettes</span><span class="dot">◯</span>
+  <span>Croissants</span><span class="dot">◯</span>
+  <span>Daily Bake</span><span class="dot">◯</span>
+  <span>Inglewood</span><span class="dot">◯</span>
+  <span>Late-Hours</span><span class="dot">◯</span>
+</div>
 
-<section class="section" id="services"><div class="wrap">
-  <div class="kick">Made fresh, made local</div>
-  <h2>What we do.</h2>
-  <div class="svcs"><div class="svc"><span class="snum">01</span><h3>Fresh-baked daily</h3></div><div class="svc"><span class="snum">02</span><h3>Custom orders &amp; cakes</h3></div><div class="svc"><span class="snum">03</span><h3>Sweet &amp; savory</h3></div><div class="svc"><span class="snum">04</span><h3>Coffee &amp; treats</h3></div></div>
-</div></section>
-
-
-
-
-<section class="section" id="visit"><div class="wrap">
-  <div class="kick">Find us</div>
-  <h2>Visit Viala.</h2>
-  <div class="visit">
-    <div class="info">
-      <div class="contact-line"><a class="btn solid" href="tel:+12133528917">Call (213) 352-8917</a><a class="btn" href="https://www.google.com/maps/search/?api=1&query=642+Howland+Dr+apt+2,+Inglewood,+CA+90301,+USA" target="_blank" rel="noopener">Get directions</a></div>
-      <div class="hrow"><span class="hd">Address</span><span class="ht">642 Howland Dr apt 2, Inglewood, CA 90301, USA</span></div>
-      <div class="hrow"><span class="hd">Phone</span><span class="ht"><a href="tel:+12133528917">(213) 352-8917</a></span></div>
-      <div class="hrow"><span class="hd">Monday</span><span class="ht">10:00 AM – 8:00 AM</span></div><div class="hrow"><span class="hd">Tuesday</span><span class="ht">10:00 AM – 8:00 AM</span></div><div class="hrow"><span class="hd">Wednesday</span><span class="ht">10:00 AM – 8:00 AM</span></div><div class="hrow"><span class="hd">Thursday</span><span class="ht">10:00 AM – 8:00 AM</span></div><div class="hrow"><span class="hd">Friday</span><span class="ht">10:00 AM – 8:00 AM</span></div><div class="hrow"><span class="hd">Saturday</span><span class="ht">10:00 AM – 8:00 AM</span></div><div class="hrow"><span class="hd">Sunday</span><span class="ht">10:00 AM – 8:00 AM</span></div>
+<section class="man" id="manifesto"><div class="wrap">
+  <div class="grid">
+    <div>
+      <div class="pre">— The Process</div>
+      <h2>Long ferments.<br><em>Honest</em><br>ingredients.</h2>
     </div>
-    <iframe loading="lazy" src="https://www.google.com/maps?q=642+Howland+Dr+apt+2,+Inglewood,+CA+90301,+USA&output=embed" title="Map to Viala Bakery"></iframe>
+    <div>
+      <p>Viala bakes small. We mix the night before, ferment slow, shape by hand in the morning, and pull loaves out one batch at a time until evening.</p>
+      <p>What you get is bread that <em>chews</em> the way bread should — open crumb, deep crust, real fermentation flavor. No shortcuts. No mass-bake. Just one neighborhood bakery on Howland, working the way bakers used to.</p>
+      <p>We're open from 10 AM most days — and we stay open late. Drop by after dinner. There's still good bread on the rack.</p>
+    </div>
   </div>
 </div></section>
 
-<footer><div class="wrap">
-  <div class="fbrand">Viala Bakery</div>
-  <div style="font-size:13px;opacity:.7;margin-top:4px">642 Howland Dr apt 2, Inglewood, CA 90301, USA</div>
+<section class="loaves" id="loaves"><div class="wrap">
+  <div class="head">
+    <div class="pre">— What's Baking</div>
+    <h2>The <em>loaves</em>.</h2>
+  </div>
+  <div class="loavesgrid">
+    <div class="loaf"><div class="num">N° 01</div><h3>Country <em>Sourdough</em></h3><div class="price">$9</div><p>Long-fermented, deep crust, open crumb. The house loaf. Sliced or whole.</p></div>
+    <div class="loaf"><div class="num">N° 02</div><h3>Brioche <em>Loaf</em></h3><div class="price">$12</div><p>Soft, buttery, golden. Perfect for French toast or to disappear before lunch.</p></div>
+    <div class="loaf"><div class="num">N° 03</div><h3>Baguette <em>Tradition</em></h3><div class="price">$5</div><p>Crackling crust, airy crumb. Bake-of-the-day. Get one warm.</p></div>
+    <div class="loaf"><div class="num">N° 04</div><h3>Olive <em>Fougasse</em></h3><div class="price">$11</div><p>Castelvetrano olives, rosemary, sea salt. Pulls apart like a thought.</p></div>
+    <div class="loaf"><div class="num">N° 05</div><h3>Almond <em>Croissant</em></h3><div class="price">$5.50</div><p>Twice-baked, frangipane center, dusted sugar. Limited daily.</p></div>
+    <div class="loaf"><div class="num">N° 06</div><h3>Pain au <em>Chocolat</em></h3><div class="price">$4.75</div><p>Two batons of dark chocolate. Layered, flaky, slow-folded.</p></div>
+  </div>
+</div></section>
+
+<section class="praise"><div class="wrap">
+  <div class="star">★ ★ ★ ★ ★</div>
+  <blockquote>"Quiet little bakery doing it the <em>right way</em>. Bread you can taste the care in."</blockquote>
+  <div class="who"><b>Viviana R.</b> · Google Review</div>
+</div></section>
+
+<section class="visit" id="visit"><div class="wrap">
+  <div class="grid">
+    <div>
+      <div class="pre">— Visit & Reserve</div>
+      <h2>Find the door.<br><em>It's worth it.</em></h2>
+      <p class="lede">A small apartment-floor bakery on Howland Drive — call ahead to reserve a loaf, or drop by anytime from mid-morning till late evening.</p>
+      <div class="info">
+        <div class="row"><b>Address</b><span>642 Howland Dr, Apt 2<br>Inglewood, CA 90301</span></div>
+        <div class="row"><b>Phone</b><a href="tel:+12133528917">(213) 352-8917</a></div>
+        <div class="row"><b>Reserve</b><span>Call ahead for whole loaves & specialty bakes</span></div>
+      </div>
+    </div>
+    <div class="hourcard">
+      <h3>Hours</h3>
+      <div class="hr"><b>Monday</b><span>10 AM – Late</span></div>
+      <div class="hr"><b>Tuesday</b><span>10 AM – Late</span></div>
+      <div class="hr"><b>Wednesday</b><span>10 AM – Late</span></div>
+      <div class="hr"><b>Thursday</b><span>10 AM – Late</span></div>
+      <div class="hr"><b>Friday</b><span>10 AM – Late</span></div>
+      <div class="hr"><b>Saturday</b><span>10 AM – Late</span></div>
+      <div class="hr"><b>Sunday</b><span>10 AM – Late</span></div>
+    </div>
+  </div>
+</div></section>
+
+<footer>
+  <div class="b">Viala<em>.</em></div>
+  <div class="tag">— SLOW BAKED · INGLEWOOD —</div>
+  <div class="det">642 Howland Dr · Inglewood · <a href="tel:+12133528917">(213) 352-8917</a></div>
   <div class="credit">Mockup designed by LJ Sites — interested in making this yours? <a href="mailto:LJsites.llc@gmail.com">LJsites.llc@gmail.com</a></div>
-</div></footer>
+</footer>
+
 </body></html>
